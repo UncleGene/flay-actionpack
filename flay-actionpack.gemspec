@@ -4,12 +4,12 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "flay-actionpack"
-  spec.version       = '0.0.1'
+  spec.version       = '0.0.2'
   spec.authors       = ["Eugene Kalenkovich"]
   spec.email         = ["rubify@softover.com"]
   spec.description   = "Flay plugin for Rails ERB templates"
   spec.summary       = "Flay actionpack ERB"
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/kalenkov/flay-actionpack"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

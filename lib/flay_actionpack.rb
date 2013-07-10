@@ -9,7 +9,7 @@ class Flay
   # Process erb template and parse the result. Returns the sexp of the parsed
   # ruby.
  
-  def actionpack_erb file
+  def process_erb file
     erb = File.read file
     src = Struct.new(:source, :mime_type, :type).new(erb, 'text/html', 'text/html')
     ruby = ActionView::Template::Handlers::ERB.call src
