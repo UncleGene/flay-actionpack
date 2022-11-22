@@ -2,7 +2,7 @@ flay-actionpack
 ==============
 
 Flay plugin for rails erb templates.
-Tested with Rails 3.x and 4.0
+Tested with Rails 7.x
 
 Installation
 ------------
