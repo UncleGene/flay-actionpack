@@ -3,7 +3,7 @@ require 'action_view'
 
 class Flay
   
-  @@plugins |= %w(erb)
+  @@plugins ||= %w(erb)
 
   ##
   # Process erb template and parse the result. Returns the sexp of the parsed

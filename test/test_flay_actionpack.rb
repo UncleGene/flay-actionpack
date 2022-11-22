@@ -3,6 +3,7 @@
 require 'minitest/autorun'
 require 'flay'
 require 'action_view'
+require 'flay_actionpack'
 
 class TestFlayActionpack < MiniTest::Unit::TestCase
   def test_actionpack_erb
