@@ -12,7 +12,7 @@ class Flay
   def process_erb file
     erb = File.read file
     src = Struct.new(:source, :mime_type, :type).new(erb, 'text/html', 'text/html')
-    ruby = ActionView::Template::Handlers::ERB.call src
+    ruby = ActionView::Template::Handlers::ERB.call src, erb
     begin
       RubyParser.new.process(ruby, file)
     rescue => e
